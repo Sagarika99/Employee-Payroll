@@ -22,6 +22,7 @@ public class EmployeePayrollServiceTest {
 		employeePayroll.writeEmployeeData(IOService.FILE_IO);
 		employeePayroll.printData(IOService.FILE_IO);
 		long enteries = employeePayroll.countEnteries(IOService.FILE_IO);
+		System.out.println(enteries);
 		Assert.assertEquals(3, enteries);
 	}
 }
