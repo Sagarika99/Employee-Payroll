@@ -64,7 +64,9 @@ public class Java8WatchServiceExample {
 			
 			if(kind==ENTRY_CREATE) {
 				try {
-					if(Files.isDirectory(child))scanRegisterDirectories(child);
+					if(Files.isDirectory(child)) {
+						scanRegisterDirectories(child);
+					}
 					
 				}catch(IOException x) {}
 					
